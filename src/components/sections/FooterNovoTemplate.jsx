@@ -72,6 +72,7 @@ function FooterNovoTemplate({
     <SectionArea
       className={`${backgroundMode} pb-4`}
       paddingtop={!showGlobalButtonsLps}
+      paddingbot={false}
     >
       <SectionWrapper>
         <footer className={`${textOpacity}`}>
