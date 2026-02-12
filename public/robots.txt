@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://patriciamachadoadvocacia.com.br/sitemap.xml
