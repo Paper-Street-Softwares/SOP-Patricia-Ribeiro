@@ -139,7 +139,7 @@ function FeaturesNovaTemplate({ colorMode, frasesDestaque, accordion }) {
                 </MotionDivDownToUp>
                 {showGlobalButtonsLps && (
                   <MotionDivDownToUp>
-                    <div className="flex flex-col gap-4 pt-4 w-fit justify-center items-start m-auto">
+                    <div className="flex flex-col gap-4 pt-4 w-fit justify-center items-center m-auto">
                       <ButtonReflexo
                         icon={
                           <svg
@@ -240,17 +240,17 @@ function FeaturesNovaTemplate({ colorMode, frasesDestaque, accordion }) {
                           className={`group p-6 rounded-xl ${cardBg} hover:scale-105 transition-all duration-700`}
                         >
                           <div
-                            className={`w-10 h-10 rounded-full ${iconBg} mb-4 flex items-center justify-center shadow-sm transition-transform`}
+                            className={`w-10 h-10 rounded-full ${iconBg} mb-4 flex items-center justify-center shadow-sm transition-transform mx-auto`}
                           >
                             {feature.icon}
                           </div>
                           <h1
-                            className={`font-secondFont font-bold text-lg mb-2 ${text} transition-all`}
+                            className={`font-secondFont font-bold text-lg mb-2 ${text} transition-all text-center`}
                           >
                             {feature.title}
                           </h1>
                           <p
-                            className={`text-sm font-secondFont font-light ${textOpacity} transition-all`}
+                            className={`text-sm font-secondFont font-light ${textOpacity} transition-all text-center`}
                           >
                             {feature.subtitle}
                           </p>
