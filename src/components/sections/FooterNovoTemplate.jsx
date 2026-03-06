@@ -1,12 +1,12 @@
-import React, { useState } from 'react'
-import { Dialog } from 'primereact/dialog'
-import { X, MapPin, Phone, Mail } from 'lucide-react'
-import SectionArea from '../sectionElements/SectionArea'
-import SectionWrapper from '../sectionElements/SectionWrapper'
-import { Link } from 'react-scroll'
-import FooterSocialIcons from '../sectionElements/footer/FooterSocialIcons'
-import content from '../../content/content'
-import { ButtonsLps } from '../../context/UseContextArchive'
+import React, { useState } from "react";
+import { Dialog } from "primereact/dialog";
+import { X, MapPin, Phone, Mail } from "lucide-react";
+import SectionArea from "../sectionElements/SectionArea";
+import SectionWrapper from "../sectionElements/SectionWrapper";
+import { Link } from "react-scroll";
+import FooterSocialIcons from "../sectionElements/footer/FooterSocialIcons";
+import content from "../../content/content";
+import { ButtonsLps } from "../../context/UseContextArchive";
 
 function FooterNovoTemplate({
   mapa,
@@ -21,51 +21,51 @@ function FooterNovoTemplate({
   obs,
   lps,
 }) {
-  const labels = content.texts.navbar.menuItems
-  const ids = content.texts.navbar.menuId
-  const [visible, setVisible] = useState(false)
+  const labels = content.texts.navbar.menuItems;
+  const ids = content.texts.navbar.menuId;
+  const [visible, setVisible] = useState(false);
 
   const openDialog = async () => {
-    await import('primereact/resources/themes/lara-light-cyan/theme.css')
-    setVisible(true)
-  }
+    await import("primereact/resources/themes/lara-light-cyan/theme.css");
+    setVisible(true);
+  };
 
-  const grid = mapa ? 'lg:grid-cols-4' : 'lg:grid-cols-3'
-  const { showGlobalButtonsLps } = ButtonsLps()
+  const grid = mapa ? "lg:grid-cols-4" : "lg:grid-cols-3";
+  const { showGlobalButtonsLps } = ButtonsLps();
 
   // Classes dinâmicas de acordo com colorMode
-  let text, textOpacity, iconColor, backgroundMode, hoverLinks
+  let text, textOpacity, iconColor, backgroundMode, hoverLinks;
   switch (colorMode) {
-    case 'light':
-      text = 'text-corTitulosPreto'
-      textOpacity = 'text-corOutrosTextosPreto'
-      iconColor = 'text-primaryDark/60'
-      backgroundMode = 'bg-transparent'
-      hoverLinks = ' bg-gradient-to-r from-primaryDark to-primaryDark '
+    case "light":
+      text = "text-corTitulosPreto";
+      textOpacity = "text-corOutrosTextosPreto";
+      iconColor = "text-primaryDark/60";
+      backgroundMode = "bg-transparent";
+      hoverLinks = " bg-gradient-to-r from-primaryDark to-primaryDark ";
 
-      break
-    case 'dark':
-      text = 'text-corTitulosBranca'
-      textOpacity = 'text-corOutrosTextosBranca'
-      iconColor = 'text-primaryLight/80'
-      backgroundMode = 'bg-transparent'
-      hoverLinks = ' bg-gradient-to-r from-primaryLight to-primaryLight '
-      break
-    case 'defaultDark':
-      text = 'text-corTitulosBranca'
-      textOpacity = 'text-corOutrosTextosBranca'
-      iconColor = 'text-primaryLight'
-      backgroundMode = 'bg-transparent'
-      hoverLinks = ' bg-gradient-to-r from-white to-white '
+      break;
+    case "dark":
+      text = "text-corTitulosBranca";
+      textOpacity = "text-corOutrosTextosBranca";
+      iconColor = "text-primaryLight/80";
+      backgroundMode = "bg-transparent";
+      hoverLinks = " bg-gradient-to-r from-primaryLight to-primaryLight ";
+      break;
+    case "defaultDark":
+      text = "text-corTitulosBranca";
+      textOpacity = "text-corOutrosTextosBranca";
+      iconColor = "text-primaryLight";
+      backgroundMode = "bg-transparent";
+      hoverLinks = " bg-gradient-to-r from-white to-white ";
 
-      break
+      break;
 
-    case 'defaultLight':
-      text = 'text-corTitulosPreto'
-      textOpacity = 'text-corOutrosTextosPreto'
-      iconColor = 'text-primaryDark/60'
-      backgroundMode = 'bg-transparent'
-      hoverLinks = ' bg-gradient-to-r from-primaryDark to-primaryDark '
+    case "defaultLight":
+      text = "text-corTitulosPreto";
+      textOpacity = "text-corOutrosTextosPreto";
+      iconColor = "text-primaryDark/60";
+      backgroundMode = "bg-transparent";
+      hoverLinks = " bg-gradient-to-r from-primaryDark to-primaryDark ";
   }
 
   return (
@@ -78,7 +78,7 @@ function FooterNovoTemplate({
         <footer className={`${textOpacity}`}>
           <div className="container mx-auto">
             <div
-              className={`grid sm:grid-cols-2 lg:grid-cols-3 ${grid} items-start gap-12 tablet2:gap-2 desktop1:gap-12 mb-8 w-full ${showGlobalButtonsLps ? 'hidden' : 'flex'}`}
+              className={`grid sm:grid-cols-2 lg:grid-cols-3 ${grid} items-start gap-12 tablet2:gap-4 desktop1:gap-12 mb-8 w-full ${showGlobalButtonsLps ? "hidden" : "flex"}`}
             >
               {/* Logo e infos */}
               <div className="space-y-6">
@@ -91,14 +91,14 @@ function FooterNovoTemplate({
                   <img
                     src={content.texts.navbar.logo.img}
                     alt={content.texts.navbar.logo.alt}
-                    className="w-[50%]"
+                    className="w-[50%] mx-auto"
                     width={187}
                     height={119}
                   />
                 </a>
 
                 <p
-                  className={`leading-relaxed font-secondFont font-light ${textOpacity}`}
+                  className={`leading-relaxed font-secondFont font-light text-center ${textOpacity}`}
                 >
                   {content.texts.footer.footerText}
                 </p>
@@ -107,7 +107,9 @@ function FooterNovoTemplate({
                 >
                   {expediente && (
                     <>
-                      <h1 className={`font-bold font-secondFont ${text}`}>
+                      <h1
+                        className={`font-bold font-secondFont text-center ${text}`}
+                      >
                         Horário de expediente:
                       </h1>
                       {content.texts.infos.footerexpediente}
@@ -115,13 +117,13 @@ function FooterNovoTemplate({
                   )}
                   {obs && (
                     <>
-                      <p className="mt-2 font-secondFont">
+                      <p className="mt-2 font-secondFont text-center">
                         {content.texts.infos.obsFooter}
                       </p>
                     </>
                   )}
                 </p>
-                <div className="flex gap-4">
+                <div className="flex gap-4 justify-center">
                   <FooterSocialIcons
                     instagram
                     facebook
@@ -134,16 +136,16 @@ function FooterNovoTemplate({
               </div>
 
               {/* Links rápidos */}
-              <div className="flex flex-col justify-center sm:items-center gap-8 tablet2:justify-center ">
+              <div className="flex flex-col justify-center sm:items-center gap-8 tablet2:justify-center mx-auto">
                 <div className="w-fit ">
                   <h1
                     className={`font-bold font-secondFont text-lg mb-6 ${text}`}
                   >
                     Links Rápidos
                   </h1>
-                  <ul className="space-y-4 font-secondFont font-light">
+                  <ul className="space-y-4 font-secondFont font-light text-center">
                     {labels.map((item, index) => {
-                      const id = ids[index]
+                      const id = ids[index];
 
                       return (
                         <li key={id}>
@@ -154,39 +156,39 @@ function FooterNovoTemplate({
                             data-track={id}
                             className={`cursor-pointer bg-gradient-to-r ${hoverLinks} pb-1 bg-[length:0%_2px] bg-no-repeat bg-left-bottom transition-[background-size] duration-300 hover:bg-[length:100%_2px] ${textOpacity} font-secondFont`}
                             onClick={(e) => {
-                              e.preventDefault()
-                              const el = document.getElementById(id)
+                              e.preventDefault();
+                              const el = document.getElementById(id);
                               if (el) {
-                                const yOffset = -90
+                                const yOffset = -90;
                                 const y =
                                   el.getBoundingClientRect().top +
                                   window.scrollY +
-                                  yOffset
+                                  yOffset;
 
-                                window.scrollTo({ top: y, behavior: 'smooth' })
+                                window.scrollTo({ top: y, behavior: "smooth" });
                               }
                             }}
                           >
                             {item}
                           </a>
                         </li>
-                      )
+                      );
                     })}
                   </ul>
                 </div>
               </div>
 
               {/* Contato */}
-              <div className="justify-start tablet2:justify-start flex flex-col gap-6">
+              <div className=" flex flex-col gap-6 mx-auto tablet2:mt-6 desktop1:mt-0">
                 <div className="w-fit">
                   <h1
-                    className={`font-bold font-secondFont text-lg mb-6 ${text}`}
+                    className={`font-bold font-secondFont text-lg mb-6 text-center ${text}`}
                   >
                     Contato
                   </h1>
                   <ul className="space-y-4">
                     {adress && (
-                      <li className="flex items-start gap-3">
+                      <li className="flex items-start gap-3 text-center">
                         <MapPin className={`w-5 h-5 shrink-0 ${iconColor}`} />
                         <span className="font-secondFont font-light">
                           {content.texts.infos.adress}
@@ -194,7 +196,7 @@ function FooterNovoTemplate({
                       </li>
                     )}
                     {phone && (
-                      <li className="flex items-center gap-3">
+                      <li className="flex items-center gap-3 justify-center">
                         <Phone className={`w-5 h-5 shrink-0 ${iconColor}`} />
                         <span className="font-secondFont font-light">
                           {content.texts.infos.phone}
@@ -202,7 +204,7 @@ function FooterNovoTemplate({
                       </li>
                     )}
                     {phoneSecond && (
-                      <li className="flex items-center gap-3">
+                      <li className="flex items-center gap-3 justify-center">
                         <Phone className={`w-5 h-5 shrink-0 ${iconColor}`} />
                         <span className="font-secondFont font-light">
                           {content.texts.infos.phoneSecundario}
@@ -210,7 +212,7 @@ function FooterNovoTemplate({
                       </li>
                     )}
                     {email && (
-                      <li className="flex items-center gap-3">
+                      <li className="flex items-center gap-3 justify-center">
                         <Mail className={`w-5 h-5 shrink-0 ${iconColor}`} />
                         <span className="font-secondFont font-light text-paragraph2 tablet2:text-paragraph3 desktop1:text-paragraph3">
                           {content.texts.infos.email}
@@ -218,7 +220,7 @@ function FooterNovoTemplate({
                       </li>
                     )}
                     {emailSecond && (
-                      <li className="flex items-center gap-3">
+                      <li className="flex items-center gap-3 justify-center">
                         <Mail className={`w-5 h-5 shrink-0 ${iconColor}`} />
                         <span className="font-secondFont font-light text-paragraph3 tablet2:text-paragraph3 desktop1:text-paragraph3">
                           {content.texts.infos.emailSecundario}
@@ -247,8 +249,8 @@ function FooterNovoTemplate({
             </div>
 
             <hr
-              className={`pb-6 border-t ${lps ? 'hidden' : 'flex'} ${text} ${
-                colorMode === 'light' ? 'opacity-90' : 'opacity-20'
+              className={`pb-6 border-t ${lps ? "hidden" : "flex"} ${text} ${
+                colorMode === "light" ? "opacity-90" : "opacity-20"
               } w-full`}
             />
 
@@ -265,8 +267,8 @@ function FooterNovoTemplate({
                   className="underline cursor-pointer"
                 >
                   Políticas de privacidade
-                </button>{' '}
-                - Desenvolvido com excelência por{' '}
+                </button>{" "}
+                - Desenvolvido com excelência por{" "}
                 <a
                   target="_blank"
                   href="https://paperstreet.com.br"
@@ -292,11 +294,11 @@ function FooterNovoTemplate({
             closeIcon={<X size={20} />}
             visible={visible}
             onHide={() => setVisible(false)}
-            style={{ width: '50vw' }}
+            style={{ width: "50vw" }}
             breakpoints={{
-              '4000px': '641px',
-              '1024px': '641px',
-              '641px': '85vw',
+              "4000px": "641px",
+              "1024px": "641px",
+              "641px": "85vw",
             }}
           >
             {content.texts.footer.privacidade}
@@ -304,7 +306,7 @@ function FooterNovoTemplate({
         </footer>
       </SectionWrapper>
     </SectionArea>
-  )
+  );
 }
 
-export default FooterNovoTemplate
+export default FooterNovoTemplate;
