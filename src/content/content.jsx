@@ -46,7 +46,7 @@ const currentYear = new Date().getFullYear();
 export const infos = {
   name: "Dra. Patrícia Ribeiro Machado",
   email: "contato", // Email desejado pelo cliente
-  emailSecundario: "ribeiromachadoadvocacia", // Email desejado pelo cliente
+  emailSecundario: "ribeiromachadoadvocacia@gmail.com", // Email desejado pelo cliente
   domain: "patriciamachadoadvocacia.com.br", // Sem "www"
   phone: {
     ddd: "48",
