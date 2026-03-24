@@ -34,6 +34,9 @@ import {
   HandCoins,
   Check,
   Shield,
+  BriefcaseBusiness,
+  Coins,
+  DollarSign,
 } from "lucide-react";
 
 import { FileText } from "lucide-react";
@@ -180,14 +183,9 @@ const content = {
     },
     features: {
       miniTag: <>Áreas de atuação</>,
-      FirstPart: <span></span>,
-      Destaque: <span className="italic font-light">Proteger</span>,
-      SecondPart: (
-        <span>
-          para garantir, adicionar especialidade de cobrança extrajudicial e
-          judicial
-        </span>
-      ),
+      FirstPart: <span>Especialidades jurídicas para</span>,
+      Destaque: <span className="italic font-light">garantir</span>,
+      SecondPart: <span>seus direitos</span>,
       subtitle: <>Soluções jurídicas seguras para decisões importantes</>,
       imgFeatures: imgFeatures,
       alt: <>Imagem ilustrativa da Features</>,
@@ -283,6 +281,63 @@ const content = {
             </div>
           ),
           icon: <Building />,
+          buttonLabelModal: "Fale Conosco",
+          buttonLabel: "Saiba Mais",
+        },
+        card7: {
+          title: <>Direito Trabalhista</>,
+          subtitle: (
+            <>Apoio jurídico para garantir justiça nas relações de trabalho</>
+          ),
+          description: (
+            <div>
+              A_Definir
+              <br />
+              <br />
+              A_Definir
+            </div>
+          ),
+          icon: <BriefcaseBusiness />,
+          buttonLabelModal: "Fale Conosco",
+          buttonLabel: "Saiba Mais",
+        },
+        card8: {
+          title: <>Cobrança Extrajudicial</>,
+          subtitle: (
+            <>
+              Recupere valores de forma rápida e estratégica, sem precisar ir à
+              Justiça
+            </>
+          ),
+          description: (
+            <div>
+              A_Definir
+              <br />
+              <br />
+              A_Definir
+            </div>
+          ),
+          icon: <Coins />,
+          buttonLabelModal: "Fale Conosco",
+          buttonLabel: "Saiba Mais",
+        },
+        card9: {
+          title: <>Cobrança Judicial</>,
+          subtitle: (
+            <>
+              Ação firme na Justiça para garantir o recebimento do que é seu por
+              direito
+            </>
+          ),
+          description: (
+            <div>
+              A_Definir
+              <br />
+              <br />
+              A_Definir
+            </div>
+          ),
+          icon: <DollarSign />,
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
         },
