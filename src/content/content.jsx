@@ -362,9 +362,9 @@ const content = {
         img: aboutImg,
         alt: "Imagem ilustrativa da Seção Sobre",
       },
-      miniTag: <>QUEM É A DRA. PATRÍCIA RIBEIRO MACHADO</>,
+      miniTag: <></>,
       FirstPart: <span> História do </span>,
-      Destaque: <span className="italic font-light"> escritório</span>,
+      Destaque: <span className="italic font-light">{""} escritório</span>,
       SecondPart: <span></span>,
       subtitle: (
         <>
@@ -374,9 +374,9 @@ const content = {
       ),
       paragraph: (
         <div>
-          Minha trajetória profissional foi construída a partir da atuação nas
-          áreas Previdenciária, da Saúde e da Usucapião, ramos do Direito que
-          impactam diretamente a segurança, a subsistência e o futuro das
+          O escritório foi fundado em 2020, iniciando sua atuação nas áreas de
+          Direito Previdenciário, Direito da Saúde e Usucapião, ramos jurídicos
+          que impactam diretamente a segurança, a subsistência e o futuro das
           pessoas.
         </div>
       ),
@@ -384,22 +384,36 @@ const content = {
       buttonModalLabelAbout: "Continuar lendo",
       modal: (
         <p className="font-secondFont">
-          Minha trajetória profissional foi construída a partir da atuação nas
-          áreas Previdenciária, da Saúde e da Usucapião, ramos do Direito que
-          impactam diretamente a segurança, a subsistência e o futuro das
+          O escritório foi fundado em 2020, iniciando sua atuação nas áreas de
+          Direito Previdenciário, Direito da Saúde e Usucapião, ramos jurídicos
+          que impactam diretamente a segurança, a subsistência e o futuro das
           pessoas.
           <br />
           <br />
-          Atuo diariamente para garantir benefícios previdenciários essenciais e
-          o direito à saúde, buscando assegurar tratamentos, medicamentos e,
-          muitas vezes, a própria preservação da vida, sempre com
-          responsabilidade e compromisso.
+          Com o crescimento da demanda e a confiança de nossos clientes,
+          ampliamos nossa atuação para nove áreas do Direito, dentre elas o
+          Direito Civil e o Direito Imobiliário, sempre com o compromisso de
+          oferecer um atendimento jurídico eficiente, estratégico e humanizado.
           <br />
           <br />
-          No Direito Imobiliário e na Usucapião, meu trabalho é proteger o
-          patrimônio conquistado com esforço, evitando perdas causadas pela
-          falta de informação ou regularização, com uma atuação justa, eficiente
-          e dentro da lei.
+          Nosso propósito é defender os direitos de cada cidadão com
+          responsabilidade, ética e dedicação, buscando soluções justas e
+          seguras dentro das normas legais vigentes. Trabalhamos de forma
+          próxima ao cliente, prezando pela transparência, pelo acompanhamento
+          contínuo e pela construção de resultados sólidos.
+          <br />
+          <br />
+          Na área Previdenciária, atuamos para garantir o acesso a benefícios
+          que assegurem a dignidade e a subsistência das pessoas. No Direito da
+          Saúde, buscamos efetivar o direito ao tratamento adequado e à
+          preservação da vida. Já no campo dos Direitos Reais e Imobiliários,
+          nossa atuação é voltada à proteção do patrimônio, muitas vezes
+          conquistado com grande esforço, evitando riscos decorrentes de
+          irregularidades ou falta de orientação jurídica adequada.
+          <br />
+          <br />
+          Nossa dedicação é diária e constante, sempre com o objetivo de
+          oferecer segurança jurídica e tranquilidade aos nossos clientes.
         </p>
       ),
       paragraphModalCta: "Entre em contato",

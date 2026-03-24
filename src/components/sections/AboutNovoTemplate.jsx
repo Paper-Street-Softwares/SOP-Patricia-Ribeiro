@@ -263,9 +263,9 @@ function AboutNovoTemplate({ ButtonModal, colorMode, benefits }) {
             }
             header={
               <span
-                className={`font-secondFont px-4 flex justify-center ${text}`}
+                className={`font-secondFont px-4 gap-1 flex justify-center ${text}`}
               >
-                {content.texts.about.FirstPart} {content.texts.about.Destaque}{" "}
+                {content.texts.about.FirstPart} {content.texts.about.Destaque}
                 {content.texts.about.SecondPart}
               </span>
             }

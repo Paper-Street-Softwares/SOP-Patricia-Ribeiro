@@ -64,7 +64,7 @@ export default function Index() {
             <Suspense>
               <FeaturesNovaTemplate
                 colorMode={colorMode}
-                frasesDestaque={true}
+                frasesDestaque={false}
                 accordion={false}
               />
             </Suspense>
