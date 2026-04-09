@@ -520,13 +520,13 @@ const content = {
     },
 
     blog: {
-      miniTag: <>A_Definir</>,
-      title: <>A_Definir</>,
-      subtitle: "",
+      miniTag: <>BLOG</>,
+      title: <>Informação jurídica ao seu alcance</>,
+      subtitle: "Acompanhe conteúdos exclusivos para manter-se sempre informado.",
       img: imgSteps,
       labelCards: "Ver mais",
       label: "Clique aqui para ver todas as matérias",
-      blogLink: <>A_Definir</>, //sem "https://"
+      blogLink: "patriciamachadoadvocacia.wordpress.com", //sem "https://"
     },
     parceria: {
       miniTag: <>A_Definir</>,

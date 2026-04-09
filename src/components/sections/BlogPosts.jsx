@@ -97,7 +97,7 @@ function BlogPosts({ colorMode }) {
                   }
                   subtitle={
                     <p
-                      className={subtitleColor}
+                      className={titleColor}
                       dangerouslySetInnerHTML={{
                         __html:
                           post.excerpt.length > 100

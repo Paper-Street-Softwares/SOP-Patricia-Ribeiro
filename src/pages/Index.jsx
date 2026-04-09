@@ -105,11 +105,17 @@ export default function Index() {
 
           <AlternatingSection index={5} colorMode={colorMode}>
             <Suspense>
+              <BlogPosts colorMode={colorMode} />
+            </Suspense>
+          </AlternatingSection>
+
+          <AlternatingSection index={6} colorMode={colorMode}>
+            <Suspense>
               <FaqNovoTemplate colorMode={colorMode} />
             </Suspense>
           </AlternatingSection>
 
-          <AlternatingSection index={6} colorMode={colorMode} forcePrimaryDark>
+          <AlternatingSection index={7} colorMode={colorMode} forcePrimaryDark>
             <Suspense>
               <FooterNovoTemplate
                 colorMode={colorMode}
