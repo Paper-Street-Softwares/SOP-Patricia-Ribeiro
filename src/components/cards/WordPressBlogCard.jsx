@@ -17,7 +17,7 @@ export default function WordPressBlogCard({
       colorTextOpacity = "text-corOutrosTextosPreto";
       break;
     case "dark":
-      colorBg = "bg-darkOpacity";
+      colorBg = "bg-black";
       colorText = "text-corTitulosBranca";
       colorTextOpacity = "text-corOutrosTextosBranca";
 
