@@ -522,7 +522,8 @@ const content = {
     blog: {
       miniTag: <>BLOG</>,
       title: <>Informação jurídica ao seu alcance</>,
-      subtitle: "Acompanhe conteúdos exclusivos para manter-se sempre informado.",
+      subtitle:
+        "Acompanhe conteúdos exclusivos para manter-se sempre informado.",
       img: imgSteps,
       labelCards: "Ver mais",
       label: "Clique aqui para ver todas as matérias",
@@ -871,8 +872,13 @@ const content = {
       copyrightLine: ` ${currentYear} - ${infos.name} - Todos os direitos reservados`,
       footerDivulgacaoText: "Gostaria de ter um site como este? Clique aqui",
       midSectionName: "Até mais",
-      footerText:
-        "Agradecemos sua visita! Esperamos que em breve você se torne nosso cliente e desfrute de todos os benefícios que oferecemos.",
+      footerText: (
+        <p>
+          Agradecemos sua visita! <br />
+          Esperamos que em breve você se torne nosso cliente e desfrute de todos
+          os benefícios que oferecemos.
+        </p>
+      ),
       footerSocialText: "Siga a gente nas redes sociais:",
       footerNavegacaoText: "NAVEGAÇÃO",
       desenvolvidoPor: "Desenvolvido com excelência por Paper Street",
